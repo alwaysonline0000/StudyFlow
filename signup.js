@@ -1,0 +1,1 @@
+document.getElementById('signup-form').addEventListener('submit',e=>{e.preventDefault();const email=document.getElementById('email');if(!email.checkValidity()){email.reportValidity();return;}document.getElementById('signup-message').innerHTML='<div class="notice">✓ Thanks for your interest! This is a demo confirmation. No email was saved.</div>';e.target.reset();});
